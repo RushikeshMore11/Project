@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body{
+            /* background-color: antiquewhite; */
+            background-image: url('./bgindex.jpg');
+        }
+
+        .container {
+            border: 3px solid gray;
+            height: 500px;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        input {
+            padding-left: 5px;
+        }
+
+        .myform {
+            padding-top: 12px;
+            padding-left: 15px;
+        }
+
+        input {
+            width: 250px;
+            height: 50px;
+        }
+
+        #btn button {
+            margin-left: 30%;
+            border: 2px solid white;
+            padding: 20px;
+            font-weight: 500;
+            color: silver;
+            background: rgb(102, 102, 236);
+            border-radius: 10px;
+        }
+
+        #btn button:hover {
+            font-weight: 1000;
+            color: whitesmoke;
+
+            background-color: darkblue;
+            border-bottom-color: yellow;
+            border-right: 4px;
+            border-radius: 13px;
+            box-shadow: 5px 5px 50px, -5px 5px 50px,
+                5px -5px 50px;
+        }
+
+        .headdiv {
+            border: 4px solid rgb(92, 117, 159);
+            background-color: rgb(110, 213, 238);
+            width: device-width;
+            height: 1cm;
+            text-align: center;
+        }
+
+        .headpara {
+            padding-top: 10.5px;
+            margin: auto;
+        }
+        footer{
+            text-align: center;
+        }
+        input  {
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headdiv">
+            <p class="headpara">
+               <strong> Welcome</strong>, Please Sign in to Continue
+
+            </p>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <form class="myform" action="" method="get">
+
+                <!-- <label for="username">Username:</label> -->
+                <input type="text" placeholder="Username, email, Phone Number" id="username" autofocus required>
+                <br> <br> <br>
+                <!-- <label for="pass">Password</label> -->
+                <input type="password" name="pass" id="pass" required placeholder="Password">
+                <br>
+                <br>
+                <br>
+                <div id="btn">
+                    <button type="submit">Log In</button>
+                </div>
+                <br><br><br><br><br>
+
+                <div>
+                    Don't have an account?
+
+                    <a href="./signup.html" target="_blank">Creat a new Acc</a>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        copyright
+    </footer>
+</body>
+
+</html>
